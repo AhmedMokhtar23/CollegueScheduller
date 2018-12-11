@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Mohamed Mostafa Mohamed -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="csc.colleguescheduller.Views.CollectingInformation.Fragment_Ready">
+
+   <android.support.constraint.Guideline android:id="@+id/fragment_ready_img_guideline_left" app:layout_constraintGuide_percent=".20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_img_guideline_right" app:layout_constraintGuide_percent=".80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+     />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_img_guideline_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_img_guideline_bottom"  app:layout_constraintGuide_percent=".35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_robot_ready"
+        android:scaleType="fitCenter"
+        android:id="@+id/fragmentready_image"
+        app:layout_constraintStart_toEndOf="@id/fragment_ready_img_guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/fragment_ready_img_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/fragment_ready_img_guideline_top"
+        app:layout_constraintBottom_toTopOf="@id/fragment_ready_img_guideline_bottom"/>
+
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_txt1_top"  app:layout_constraintGuide_percent=".385"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wellcome,"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_txt1_top"
+
+        />
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_txt2_top"  app:layout_constraintGuide_percent=".47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="I'm sorry, I didn't introduce myself."
+            android:textSize="15.5sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_txt2_top"
+
+        />
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_txt3_top"  app:layout_constraintGuide_percent=".55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_txt3_top"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My name is "
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alpha,"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_txt4_top"  app:layout_constraintGuide_percent=".62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="I'm here to guide you."
+            android:textSize="15.5sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_txt4_top"
+
+        />
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_txt5_top"  app:layout_constraintGuide_percent=".71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_txt5_top"
+    >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you ready?"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            />
+        <View
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+</LinearLayout>
+
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_button_start" app:layout_constraintGuide_percent=".33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_button_end"  app:layout_constraintGuide_percent=".67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_button_top" app:layout_constraintGuide_percent=".83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <android.support.constraint.Guideline android:id="@+id/fragment_ready_guideline_button_bottom"  app:layout_constraintGuide_percent=".94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <Button android:id="@+id/collectinginformation_ready_btn_start"
+            android:text="Start"
+            android:background="@drawable/ic_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@android:color/white"
+            android:onClick="btn_Start"
+            app:layout_constraintStart_toEndOf="@id/fragment_ready_guideline_button_start"
+            app:layout_constraintEnd_toStartOf="@id/fragment_ready_guideline_button_end"
+            app:layout_constraintTop_toBottomOf="@id/fragment_ready_guideline_button_top"
+            app:layout_constraintBottom_toTopOf="@id/fragment_ready_guideline_button_bottom"
+
+
+            />
+
+</android.support.constraint.ConstraintLayout>

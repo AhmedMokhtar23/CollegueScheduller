@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "65909675738",
+    "firebase_url": "https://colleguescheduller-cc579.firebaseio.com",
+    "project_id": "colleguescheduller-cc579",
+    "storage_bucket": "colleguescheduller-cc579.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65909675738:android:2d24890b8cc93a82",
+        "android_client_info": {
+          "package_name": "csc.colleguescheduller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65909675738-1c6po9mqtpc29fl70cdjm6pdfjdb7f8d.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "65909675738-1c6po9mqtpc29fl70cdjm6pdfjdb7f8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2U7XfdPr68JKXJE8691-uak2c4p54Bc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

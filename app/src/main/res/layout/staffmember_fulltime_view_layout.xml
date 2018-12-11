@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mohamed Mostafa Mohamed -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_txtvs_clmn1_start" app:layout_constraintGuide_percent=".1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_txtvs_clmn1_end" app:layout_constraintGuide_percent=".4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_txtvs_clmn2_start" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_txtvs_clmn2_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_txtv_title_start" app:layout_constraintGuide_percent=".07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row1_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row2_top" app:layout_constraintGuide_percent=".12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row3_top" app:layout_constraintGuide_percent=".23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row4_top" app:layout_constraintGuide_percent=".34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row5_top" app:layout_constraintGuide_percent=".45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row6_top" app:layout_constraintGuide_percent=".56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row7_top" app:layout_constraintGuide_percent=".67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_row8_top" app:layout_constraintGuide_percent=".78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL INFO"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/app_background_2"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtv_title_start"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row1_top"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_teachinginfo_top" app:layout_constraintGuide_percent=".03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_teachinginfo_bottom" app:layout_constraintGuide_percent=".11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_view_gd_teachinginfo_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <ImageButton android:id="@+id/staffmemeber_btn_teachinginfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_teaching_info"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_teachinginfo_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_teachinginfo_top"
+        app:layout_constraintBottom_toTopOf="@id/staffmember_view_gd_teachinginfo_bottom"/>
+
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row2_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="12sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D12445"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row3_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Code"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_accesscode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D15ad945"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row4_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohamed Ahmed Mahmoud"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row5_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific Degree"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_scidegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professor Doctor"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row6_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific Department"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_scidepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Science"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn1_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row8_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Hours"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_workours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row7_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Permossion"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_accesspermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_view_gd_txtvs_clmn2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_view_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_view_gd_row8_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiring Date"
+            android:textSize="13sp"/>
+        <TextView android:id="@+id/staffmember_view_txtv_hiringdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18/3/2010"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

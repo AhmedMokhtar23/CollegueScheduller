@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_start" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_row1_top" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_row2_top" app:layout_constraintGuide_percent=".2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_row3_top" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/reports_gd_row4_top" app:layout_constraintGuide_percent=".87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+
+    <Spinner android:id="@+id/reports_spinner_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/reports_gd_start"
+        app:layout_constraintEnd_toStartOf="@id/reports_gd_end"
+        app:layout_constraintTop_toBottomOf="@id/reports_gd_row1_top"/>
+
+    <Spinner android:id="@+id/reports_spinner_sheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/reports_gd_start"
+        app:layout_constraintEnd_toStartOf="@id/reports_gd_end"
+        app:layout_constraintTop_toBottomOf="@id/reports_gd_row2_top"/>
+
+    <Button android:id="@+id/reports_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export"
+        android:textColor="@android:color/white"
+        android:background="@color/app_background"
+        app:layout_constraintTop_toBottomOf="@id/reports_gd_row3_top"
+        app:layout_constraintEnd_toStartOf="@id/reports_gd_end"/>
+
+    <TextView android:id="@+id/reports_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Files Will Be Export To"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/reports_gd_start"
+        app:layout_constraintTop_toBottomOf="@id/reports_gd_row4_top"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="internal storage/HICIS Schedule/Reports"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/reports_gd_start"
+        app:layout_constraintTop_toBottomOf="@id/reports_txtv"/>
+
+</android.support.constraint.ConstraintLayout>

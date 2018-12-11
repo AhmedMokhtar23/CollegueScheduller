@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_nav_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/app_background"
+        android:clickable="true"
+        android:onClick="nav_item_click">
+
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_txtv_degree_bottom" app:layout_constraintGuide_percent=".9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_txtv_start" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView android:id="@+id/mainview_nav_txtv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_gd_txtv_degree_bottom"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_txtv_start"
+            android:text="Admin Assistant"/>
+        <TextView
+            android:id="@+id/mainview_nav_txtv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_txtv_degree"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_txtv_start"
+            android:text="DR. Mohammed Ahmed"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1" />
+
+    <LinearLayout android:id="@+id/mainview_nav_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".015"
+        android:background="@android:color/black"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:onClick="logout">
+
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_logout_txtv_start" app:layout_constraintGuide_percent=".1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_logout_img_start" app:layout_constraintGuide_percent=".8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_logout_img_end" app:layout_constraintGuide_percent=".9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_logout_top" app:layout_constraintGuide_percent=".2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_logout_bottom" app:layout_constraintGuide_percent=".8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Logout"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_logout_txtv_start"
+            app:layout_constraintTop_toBottomOf="@id/mainview_nav_gd_logout_top"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_gd_logout_bottom"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/logout"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_gd_logout_bottom"
+            app:layout_constraintTop_toBottomOf="@id/mainview_nav_gd_logout_top"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_logout_img_start"
+            app:layout_constraintEnd_toStartOf="@id/mainview_nav_gd_logout_img_end"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

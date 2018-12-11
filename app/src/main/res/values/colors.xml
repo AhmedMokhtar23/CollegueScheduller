@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="message_background">#7F000000</color>
+    <color name="connecting_background">#64000000</color>
+    <color name="app_background">#1abc9c</color>
+    <color name="app_background_2">#16a085</color>
+    <color name="yellow">#ffff00</color>
+    <color name="profile_title">#e1e0e0</color>
+    <color name="yes">#fe4e4e</color>
+    <color name="no">#1abc9c</color>
+</resources>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ahmed Mokhtar Hassanin -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_txtvs_clmn1_start" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_txtvs_clmn1_end" app:layout_constraintGuide_percent=".4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_txtvs_clmn2_start" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_txtvs_clmn2_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_txtv_title_start" app:layout_constraintGuide_percent=".07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row1_top" app:layout_constraintGuide_percent=".03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row2_top" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row3_top" app:layout_constraintGuide_percent=".19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row4_top" app:layout_constraintGuide_percent=".28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row5_top" app:layout_constraintGuide_percent=".37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row6_top" app:layout_constraintGuide_percent=".46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row7_top" app:layout_constraintGuide_percent=".55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row8_top" app:layout_constraintGuide_percent=".64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row9_top" app:layout_constraintGuide_percent=".73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row10_top" app:layout_constraintGuide_percent=".82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row11_top" app:layout_constraintGuide_percent=".92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_gd_row11_bottom" app:layout_constraintGuide_percent=".98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL INFO"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/app_background_2"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtv_title_start"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row1_top"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row2_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:inputType="textEmailAddress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row3_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Code"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_accesscode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:inputType="textVisiblePassword"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row4_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:inputType="textPersonName"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row5_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific Degree"
+            android:textSize="11sp"/>
+        <Spinner android:id="@+id/staffmember_edit_spinner_scidegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row6_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific Department"
+            android:textSize="11sp"/>
+        <Spinner android:id="@+id/staffmember_edit_spinner_scidepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row7_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Permission"
+            android:textSize="11sp"/>
+        <Spinner android:id="@+id/staffmember_edit_spinner_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row8_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collegue"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_collegue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row9_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn1_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row10_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Hours"
+            android:textSize="11sp"/>
+        <EditText android:id="@+id/staffmember_edit_txte_workours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row10_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiring Date"
+            android:textSize="11sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7sp"
+            android:text=" "/>
+        <TextView
+            android:id="@+id/staffmember_edit_txte_hiringdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <Button android:id="@+id/staffmember_edit_btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="SAVE"
+        android:background="@color/app_background"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_gd_txtvs_clmn2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_gd_txtvs_clmn2_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_gd_row11_top"
+        app:layout_constraintBottom_toTopOf="@id/staffmember_edit_gd_row11_bottom"/>
+
+</android.support.constraint.ConstraintLayout>

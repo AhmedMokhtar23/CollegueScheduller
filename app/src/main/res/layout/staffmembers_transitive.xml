@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Karim Asaad -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_clmn_1_start" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_clmn_1_end" app:layout_constraintGuide_percent=".45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_clmn_2_start" app:layout_constraintGuide_percent=".55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_clmn_2_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_1_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_1_bottom" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_1_cont_top" app:layout_constraintGuide_percent=".08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_2_top" app:layout_constraintGuide_percent=".35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_2_bottom" app:layout_constraintGuide_percent=".6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_2_cont_top" app:layout_constraintGuide_percent=".38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_3_top" app:layout_constraintGuide_percent=".65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_3_bottom" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmembers_transitive_gd_row_3_cont_top" app:layout_constraintGuide_percent=".68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <View android:id="@+id/staffmembers_transitive_btn_lecturerfulltime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_staff"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LECTURER"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="FULL TIME"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/staffmembers_transitive_btn_assissatntfulltime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_assisstant_fulltime"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ASSISSTANT"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="FULL TIME"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/staffmembers_transitive_btn_lecturerparttime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_2_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_2_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_lecturer_parttime"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LECTURER"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PART TIME"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/staffmembers_transitive_btn_assisstantparttime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_2_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_2_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_assisstant_parttime"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ASSISSTANT"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PART TIME"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/staffmembers_transitive_btn_setting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_3_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/staffmembers_transitive_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmembers_transitive_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/staffmembers_transitive_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/staffmembers_transitive_gd_row_3_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_staffsettings"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SETTINGS"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MANAGE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

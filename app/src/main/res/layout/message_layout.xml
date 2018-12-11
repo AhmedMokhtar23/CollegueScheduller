@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+<android.support.constraint.ConstraintLayout android:id="@+id/message"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/message_background"
+    android:onClick="message_back_click">
+
+    <android.support.constraint.Guideline android:id="@+id/message_gd_start" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <android.support.constraint.Guideline android:id="@+id/message_gd_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+    <android.support.constraint.Guideline android:id="@+id/message_gd_top" app:layout_constraintGuide_percent=".67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+    <android.support.constraint.Guideline android:id="@+id/message_gd_bottom" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_message_background"
+        app:layout_constraintStart_toStartOf="@id/message_gd_start"
+        app:layout_constraintEnd_toStartOf="@id/message_gd_end"
+        app:layout_constraintBottom_toTopOf="@id/message_gd_bottom"
+        app:layout_constraintTop_toBottomOf="@id/message_gd_top">
+
+        <android.support.constraint.Guideline android:id="@+id/message_gd_txt_start" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_txt_end" app:layout_constraintGuide_percent=".65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_txt_top" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_txt_bottom" app:layout_constraintGuide_percent=".6"
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:orientation="horizontal"/>
+
+        <TextView android:id="@+id/message_txt_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/message_gd_txt_start"
+            app:layout_constraintEnd_toEndOf="@id/message_gd_txt_end"
+            app:layout_constraintTop_toTopOf="@id/message_gd_txt_top"
+            app:layout_constraintBottom_toTopOf="@id/message_gd_txt_bottom"
+            android:text="Username and password not incorrect. If you still have that error please check system admin"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+
+
+        <android.support.constraint.Guideline android:id="@+id/message_gd_btn_start" app:layout_constraintGuide_percent=".1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_btn_bottom" app:layout_constraintGuide_percent=".85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+
+
+        <TextView android:id="@+id/message_btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text=" Retry "
+            app:layout_constraintBottom_toBottomOf="@id/message_gd_btn_bottom"
+            app:layout_constraintStart_toStartOf="@id/message_gd_btn_start"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:onClick="message_retry" />
+
+        <LinearLayout android:id="@+id/message_lyt_ask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/message_gd_btn_start"
+            app:layout_constraintEnd_toStartOf="@id/message_gd_img_start"
+            app:layout_constraintBottom_toBottomOf="@id/message_gd_btn_bottom"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="YES"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:onClick="on_messageresult"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="NO"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:onClick="on_messageresult"/>
+
+        </LinearLayout>
+
+        <android.support.constraint.Guideline android:id="@+id/message_gd_img_bottom" app:layout_constraintGuide_percent=".8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_img_top" app:layout_constraintGuide_percent=".2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_img_start" app:layout_constraintGuide_percent=".7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/message_gd_img_end" app:layout_constraintGuide_percent=".95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/message_img_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_wifi"
+            app:layout_constraintBottom_toBottomOf="@id/message_gd_img_bottom"
+            app:layout_constraintEnd_toEndOf="@id/message_gd_img_end"
+            app:layout_constraintStart_toEndOf="@id/message_gd_img_start"
+            app:layout_constraintTop_toBottomOf="@id/message_gd_img_top" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

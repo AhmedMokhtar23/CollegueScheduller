@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_clmn_1_start" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_clmn_1_end" app:layout_constraintGuide_percent=".45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_clmn_2_start" app:layout_constraintGuide_percent=".55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_clmn_2_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_row_1_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_row_1_bottom" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/schedulemanage_gd_row_1_cont_top" app:layout_constraintGuide_percent=".08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <View android:id="@+id/schedulemanage_btn_shemamanage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/schedulemanage_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/schedulemanage_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/schedulemanage_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/schedulemanage_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/schedulemanage_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/schedulemanage_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/schedulemanage_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/schedulemanage_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/manage_schema"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SCHEMAS"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MANAGE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/schedulemanage_btn_schedulegenerate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/schedulemanage_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/schedulemanage_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/schedulemanage_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/schedulemanage_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/schedulemanage_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/schedulemanage_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/schedulemanage_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/schedulemanage_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_schedule"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SCHEDULES"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="GENERATE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

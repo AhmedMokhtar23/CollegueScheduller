@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_teachinginfo_gd_bottom" app:layout_constraintGuide_percent=".6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_teachinginfo_gd_btn_top" app:layout_constraintGuide_percent=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_teachinginfo_gd_btn_bottom" app:layout_constraintGuide_percent=".75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_teachinginfo_gd_btn_start" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/staffmember_edit_teachinginfo_gd_btn_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <FrameLayout android:id="@+id/staffmember_edit_teachinginfo_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/staffmember_edit_teachinginfo_gd_bottom"/>
+    <Button android:id="@+id/staffmember_edit_teachinginfo_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/app_background"
+        android:text="APPROVED"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/staffmember_edit_teachinginfo_gd_btn_start"
+        app:layout_constraintEnd_toStartOf="@id/staffmember_edit_teachinginfo_gd_btn_end"
+        app:layout_constraintTop_toBottomOf="@id/staffmember_edit_teachinginfo_gd_btn_top"
+        app:layout_constraintBottom_toTopOf="@id/staffmember_edit_teachinginfo_gd_btn_bottom"/>
+
+</android.support.constraint.ConstraintLayout>

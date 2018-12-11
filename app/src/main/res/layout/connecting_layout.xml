@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/message_background"
+    android:id="@+id/connecting_layout">
+
+    <android.support.constraint.Guideline android:id="@+id/connecting_gd_start" app:layout_constraintGuide_percent=".2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/connecting_gd_end" app:layout_constraintGuide_percent=".8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/connecting_gd_top" app:layout_constraintGuide_percent=".47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/connecting_gd_bottom" app:layout_constraintGuide_percent=".53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@id/connecting_gd_start"
+        app:layout_constraintEnd_toStartOf="@id/connecting_gd_end"
+        app:layout_constraintTop_toBottomOf="@id/connecting_gd_top"
+        app:layout_constraintBottom_toTopOf="@id/connecting_gd_bottom">
+        <ImageView android:id="@+id/connecting_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_connecting" />
+        <Button android:id="@+id/connecting_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:text="Abort"
+            android:background="@android:color/transparent"
+            android:textColor="@color/yellow"
+            android:onClick="abort_connection"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+

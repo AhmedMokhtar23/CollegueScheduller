@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/message_background"
+    android:onClick="message_back_click">
+
+    <android.support.constraint.Guideline android:id="@+id/confirm_gd_top" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/confirm_gd_bottom" app:layout_constraintGuide_percent=".85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/confirm_gd_start" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/confirm_gd_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_message_background"
+        app:layout_constraintStart_toEndOf="@id/confirm_gd_start"
+        app:layout_constraintEnd_toStartOf="@id/confirm_gd_end"
+        app:layout_constraintTop_toBottomOf="@id/confirm_gd_top"
+        app:layout_constraintBottom_toTopOf="@id/confirm_gd_bottom">
+
+        <android.support.constraint.Guideline android:id="@+id/confirm_message_gd_start" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/confirm_message_gd_end" app:layout_constraintGuide_percent=".95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline android:id="@+id/confirm_message_gd_top" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/confirm_message_gd_bottom" app:layout_constraintGuide_percent=".9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/confirm_message_gd_start"
+            app:layout_constraintEnd_toStartOf="@id/confirm_message_gd_end"
+            app:layout_constraintTop_toBottomOf="@id/confirm_message_gd_top"
+            app:layout_constraintBottom_toTopOf="@id/confirm_message_gd_bottom">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2">
+                <TextView android:id="@+id/confirm_txtv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="this Will Reset the System To Its Default Settings, Your Data Can't Be Recovered After Reset"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:textAlignment="center" />
+            </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset Password"
+                    android:textSize="10sp"/>
+                <EditText android:id="@+id/confirm_txte_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8">
+                <TextView android:id="@+id/confirm_txtv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Are You Sure You Want To Reset ?"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:textAlignment="center" />
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight=".8">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@android:color/transparent"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YES"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@color/yes"
+                    android:onClick="on_confirm"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@color/no"
+                    android:onClick="on_confirm"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

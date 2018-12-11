@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_colleguelogo_start" app:layout_constraintGuide_percent=".35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_colleguelogo_end" app:layout_constraintGuide_percent=".65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_colleguelogo_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_colleguelogo_bottom" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_coleguelogo"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/signin_gd_img_colleguelogo_start"
+        app:layout_constraintEnd_toStartOf="@id/signin_gd_img_colleguelogo_end"
+        app:layout_constraintTop_toBottomOf="@id/signin_gd_img_colleguelogo_top"
+        app:layout_constraintBottom_toTopOf="@id/signin_gd_img_colleguelogo_bottom"/>
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_txt_title_start" app:layout_constraintGuide_percent=".2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_txt_title_end" app:layout_constraintGuide_percent=".8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <LinearLayout android:id="@+id/signin_txtv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/signin_gd_img_colleguelogo_bottom"
+        app:layout_constraintStart_toEndOf="@id/signin_gd_txt_title_start"
+        app:layout_constraintEnd_toStartOf="@id/signin_gd_txt_title_end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="HIGHER INSTITUTE FOR
+COMPUTER SCIENCE AND
+INFORMATION SYSTEMS"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="SCHEDULE" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_feilds_start" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_feilds_end" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_feilds_top" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/signin_gd_feilds_start"
+        app:layout_constraintEnd_toStartOf="@id/signin_gd_feilds_end"
+        app:layout_constraintTop_toBottomOf="@id/signin_gd_feilds_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin_txte_username"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin_txte_password"
+            android:textColor="@android:color/white"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_btn_top" app:layout_constraintGuide_percent=".8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_btn_bottom" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_btn_start" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_btn_end" app:layout_constraintGuide_percent=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/signin_btn_signin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_btn"
+        android:scaleType="fitXY"
+        android:onClick="signin_click"
+        android:text="Sign In"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/signin_gd_btn_bottom"
+        app:layout_constraintEnd_toStartOf="@id/signin_gd_btn_end"
+        app:layout_constraintStart_toEndOf="@id/signin_gd_btn_start"
+        app:layout_constraintTop_toBottomOf="@id/signin_gd_btn_top" />
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_connecting_start" app:layout_constraintGuide_percent=".72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_connecting_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_connecting_top" app:layout_constraintGuide_percent=".83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_connecting_bottom" app:layout_constraintGuide_percent=".87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_teamlogo_top" app:layout_constraintGuide_percent=".955"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_teamlogo_bottom" app:layout_constraintGuide_percent=".99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_teamlogo_start" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/signin_gd_img_teamlogo_end" app:layout_constraintGuide_percent=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_teamlogo"
+        app:layout_constraintBottom_toTopOf="@id/signin_gd_img_teamlogo_bottom"
+        app:layout_constraintEnd_toStartOf="@id/signin_gd_img_teamlogo_end"
+        app:layout_constraintStart_toEndOf="@id/signin_gd_img_teamlogo_start"
+        app:layout_constraintTop_toBottomOf="@id/signin_gd_img_teamlogo_top" />
+
+
+</android.support.constraint.ConstraintLayout>
+

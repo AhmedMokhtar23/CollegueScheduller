@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Karim Asaad -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_clmn_1_start" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_clmn_1_end" app:layout_constraintGuide_percent=".45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_clmn_2_start" app:layout_constraintGuide_percent=".55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_clmn_2_end" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_1_top" app:layout_constraintGuide_percent=".05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_1_bottom" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_1_cont_top" app:layout_constraintGuide_percent=".08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_2_top" app:layout_constraintGuide_percent=".35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_2_bottom" app:layout_constraintGuide_percent=".6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_2_cont_top" app:layout_constraintGuide_percent=".38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_3_top" app:layout_constraintGuide_percent=".65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_3_bottom" app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/adminpanel_gd_row_3_cont_top" app:layout_constraintGuide_percent=".68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+
+    <View android:id="@+id/adminpanel_btn_databasemanagment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_database_managment"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DATABASE"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MANAGE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/adminpanel_btn_schedulemanage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_1_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_1_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_1_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_schedule"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SCHEDULE"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MANAGE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/adminpanel_btn_staffmanagment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_2_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_2_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_staff"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="STAFF"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MANAGE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/adminpanel_reports"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_2_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_2_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_2_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_reports"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="REPORTS"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SCHEDULE"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/adminpanel_btn_systemenable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_3_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_1_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_1_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_3_cont_top">
+
+        <ImageView android:id="@+id/adminpanel_img_systemenable"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_system_disabled"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView android:id="@+id/adminpanel_txtv_systemenable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ENABLE"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SYSTEM"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:id="@+id/adminpanel_btn_systemreset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_3_top"
+        android:background="@drawable/ic_btn_bg"
+        android:clickable="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/adminpanel_gd_clmn_2_start"
+        app:layout_constraintEnd_toStartOf="@id/adminpanel_gd_clmn_2_end"
+        app:layout_constraintBottom_toTopOf="@id/adminpanel_gd_row_3_bottom"
+        app:layout_constraintTop_toBottomOf="@id/adminpanel_gd_row_3_cont_top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/reset"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="RESET"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SYSTEM"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

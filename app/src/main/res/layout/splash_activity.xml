@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_colleguelogo_start" app:layout_constraintGuide_percent=".3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_colleguelogo_end" app:layout_constraintGuide_percent=".7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_colleguelogo_top" app:layout_constraintGuide_percent=".1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_colleguelogo_bottom" app:layout_constraintGuide_percent=".4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_coleguelogo"
+        app:layout_constraintBottom_toTopOf="@id/splash_gd_img_colleguelogo_bottom"
+        app:layout_constraintEnd_toStartOf="@id/splash_gd_img_colleguelogo_end"
+        app:layout_constraintStart_toEndOf="@id/splash_gd_img_colleguelogo_start"
+        app:layout_constraintTop_toBottomOf="@id/splash_gd_img_colleguelogo_top" />
+
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_txt_start" app:layout_constraintGuide_percent=".2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_txt_end" app:layout_constraintGuide_percent=".78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/splash_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="HIGHER INSTITUTE FOR
+COMPUTER SCIENCE AND
+INFORMATION SYSTEMS"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/splash_gd_img_colleguelogo_bottom"
+        app:layout_constraintStart_toEndOf="@id/splash_gd_txt_start"
+        app:layout_constraintEnd_toStartOf="@id/splash_gd_txt_end"/>
+
+    <TextView
+        android:id="@+id/splash_txt_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/splash_txt"
+        app:layout_constraintStart_toEndOf="@id/splash_gd_img_colleguelogo_start"
+        app:layout_constraintEnd_toStartOf="@id/splash_gd_img_colleguelogo_end"/>
+
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_teamlogo_top" app:layout_constraintGuide_percent=".95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_teamlogo_bottom" app:layout_constraintGuide_percent=".99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_teamlogo"
+        app:layout_constraintBottom_toTopOf="@id/splash_gd_img_teamlogo_bottom"
+        app:layout_constraintEnd_toStartOf="@id/splash_gd_img_colleguelogo_end"
+        app:layout_constraintStart_toEndOf="@id/splash_gd_img_colleguelogo_start"
+        app:layout_constraintTop_toBottomOf="@id/splash_gd_img_teamlogo_top" />
+
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_bg_top" app:layout_constraintGuide_percent=".6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <android.support.constraint.Guideline android:id="@+id/splash_gd_img_bg_start" app:layout_constraintGuide_percent=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="@id/splash_gd_img_teamlogo_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/splash_gd_img_bg_start"
+        app:layout_constraintTop_toBottomOf="@id/splash_gd_img_bg_top" />
+
+
+</android.support.constraint.ConstraintLayout>
